@@ -28,6 +28,4 @@ class Show < ActiveRecord::Base
     self.order(:name)
   end
 
-
-
 end
