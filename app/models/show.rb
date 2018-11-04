@@ -13,7 +13,7 @@ class Show < ActiveRecord::Base
   end
 
   def self.least_popular_show
-    self.order(rating: :asc).limit(1)
+    self.find_by(self.lowest_rating)
   end
 
   def self.ratings_sum
